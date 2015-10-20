@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+//------------------------------------------------------
+// demo style
+//------------------------------------------------------
+section {
+	padding: 30px;
+	$bgColor: #eee;
+	$borderColor: #000;
+	$size: 20px;
+	$size2: $size * 1;
+	$bgColor2: #ccc;
+	$borderColor2: #f00;
+	.demo {
+		position: relative;
+		width: 200px;
+		height: 100px;
+		background-color: $bgColor;
+		background-origin: border-box;
+		border: 1px solid $borderColor;
+		@include border-radius(5px);
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		line-height: 100px;
+		&.tips-top {
+			@include k_triangle_tips(top, $bgColor, $borderColor, $size, 0.6);
+		}
+		&.tips-right {
+			@include k_triangle_tips(right, $bgColor, $borderColor, $size);
+		}
+		&.tips-bottom {
+			@include k_triangle_tips(bottom, $bgColor, $borderColor, $size);
+		}
+		&.tips-left {
+			@include k_triangle_tips(left, $bgColor, $borderColor, $size);
+		}
+		&.dropdown-top {
+			div {
+				@include k_triangle_dropdown(top, $bgColor2, $borderColor2, $size2, $scaleY: 1);
+			}
+		}
+		&.dropdown-right {
+			div {
+				@include k_triangle_dropdown(right, $bgColor2, $borderColor2, $size2, $scaleY: 1);
+			}
+		}
+		&.dropdown-bottom {
+			div {
+				@include k_triangle_dropdown(bottom, $bgColor2, $borderColor2, $size2, $scaleY: 1);
+			}
+		}
+		&.dropdown-left {
+			div {
+				@include k_triangle_dropdown(left, $bgColor2, $borderColor2, $size2, $scaleY: 1);
+			}
+		}
+	}
+}
+
+
+
+

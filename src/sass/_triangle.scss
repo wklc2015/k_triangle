@@ -1,0 +1,116 @@
+@charset "UTF-8";
+//------------------------------------------------------
+// set triangle
+//------------------------------------------------------
+
+@function k_triangle_direcition($direcition) {
+	@if ($direcition == 'top') {
+		@return 'bottom';
+	} @else if ($direcition == 'left') {
+		@return 'right';
+	} @else if ($direcition == 'bottom') {
+		@return 'top';
+	} @else if ($direcition == 'right') {
+		@return 'left';
+	}
+}
+
+
+@mixin k_triangle_basic($direcition, $color, $size){
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	pointer-events: none;
+	border-color: transparent;
+	border-width: $size;
+	border-#{$direcition}-color: $color;
+}
+
+@mixin k_triangle_position($position, $direcition, $scaleX, $scaleY){
+	$transform_scale : if($scaleX, scaleX($scaleX), ()) if($scaleY, scaleX($scaleY), ());
+	$transform_translate : ();
+	$transform_rotate: rotate(180deg);
+
+	@if ($position == 'tips') {
+		@if ($direcition == 'top') {
+			left: 50%;
+			$transform_translate : translate(-50%, -100%);
+		} @else if ($direcition == 'left') {
+			top: 50%;
+			$transform_translate : translate(-100%, -50%);
+		} @else if ($direcition == 'bottom') {
+			left: 50%;
+			$transform_translate : translate(-50%, 100%);
+		} @else if ($direcition == 'right') {
+			top: 50%;
+			$transform_translate : translate(100%, -50%);
+		}
+		@include transform($transform_translate $transform_scale $transform_rotate);
+	}@else if($position == 'dropdown'){
+		top: 0;
+		left: 0;
+		@include transform($transform_translate $transform_scale);
+	}
+}
+
+@mixin k_triangle_margin($direcition){
+	$top: ();
+	$left: ();
+	@if ($direcition == 'top') {
+		$top: 1px;
+		$left: 2px;
+	} @else if ($direcition == 'left') {
+		$top: 2px;
+		$left: 1px;
+	} @else if ($direcition == 'bottom') {
+		$top: 3px;
+		$left: 2px;
+	} @else if ($direcition == 'right') {
+		$top: 2px;
+		$left: 3px;
+	}
+	margin-top: $top;
+	margin-left: $left;
+}
+
+@mixin k_triangle_tips($direcition, $bgColor, $borderColor, $size: 10px, $scaleX: false, $scaleY: false){
+	position: relative;
+	@if ($borderColor) {
+		&:before {
+			@include k_triangle_basic($direcition, $borderColor, $size);
+			@include k_triangle_position('tips', $direcition, $scaleX, $scaleY);
+			#{$direcition}: 0;
+		}
+	}
+	&:after {
+		@include k_triangle_basic($direcition, $bgColor, $size);
+		@include k_triangle_position('tips', $direcition, $scaleX, $scaleY);
+		#{$direcition}: 1px;
+	}
+}
+
+@mixin k_triangle_dropdown($direcition, $bgColor, $borderColor, $size: 10px, $scaleX: false, $scaleY: false) {
+	position: absolute;
+	width: $size * 2;
+	height: $size * 2;
+	left: 20%;
+	top: 50%;
+	margin-top: -$size;
+	@if ($borderColor) {
+		&:before {
+			@include k_triangle_basic($direcition, $borderColor, $size);
+			@include k_triangle_position('dropdown', $direcition, $scaleX, $scaleY);
+		}
+	}
+	&:after {
+		@include k_triangle_basic($direcition, $bgColor, $size - 2);
+		@include k_triangle_position('dropdown', $direcition, $scaleX, $scaleY);
+		@include k_triangle_margin($direcition);
+	}
+}
+
+
+
+
