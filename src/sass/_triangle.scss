@@ -3,6 +3,7 @@
 // set triangle
 //------------------------------------------------------
 
+// simple function to return four direction
 @function k_triangle_direcition($direcition) {
 	@if ($direcition == 'top') {
 		@return 'bottom';
@@ -15,7 +16,7 @@
 	}
 }
 
-
+// basic style
 @mixin k_triangle_basic($direcition, $color, $size){
 	position: absolute;
 	content: '';
@@ -28,12 +29,15 @@
 	border-#{$direcition}-color: $color;
 }
 
-@mixin k_triangle_position($position, $direcition, $scaleX, $scaleY){
+// set the triangle position
+// set translate when type is tips
+// set default top and left when type is dropdown (almost the top and left will reset by use)
+@mixin k_triangle_position($type, $direcition, $scaleX, $scaleY){
 	$transform_scale : if($scaleX, scaleX($scaleX), ()) if($scaleY, scaleX($scaleY), ());
 	$transform_translate : ();
 	$transform_rotate: rotate(180deg);
 
-	@if ($position == 'tips') {
+	@if ($type == 'tips') {
 		@if ($direcition == 'top') {
 			left: 50%;
 			$transform_translate : translate(-50%, -100%);
@@ -48,13 +52,15 @@
 			$transform_translate : translate(100%, -50%);
 		}
 		@include transform($transform_translate $transform_scale $transform_rotate);
-	}@else if($position == 'dropdown'){
+	}@else if($type == 'dropdown'){
 		top: 0;
 		left: 0;
 		@include transform($transform_translate $transform_scale);
 	}
 }
 
+// when type is dropdown
+// the :after should set margin
 @mixin k_triangle_margin($direcition){
 	$top: ();
 	$left: ();
@@ -75,6 +81,7 @@
 	margin-left: $left;
 }
 
+// tips triangle
 @mixin k_triangle_tips($direcition, $bgColor, $borderColor, $size: 10px, $scaleX: false, $scaleY: false){
 	position: relative;
 	@if ($borderColor) {
@@ -91,6 +98,7 @@
 	}
 }
 
+// dropdown triangle
 @mixin k_triangle_dropdown($direcition, $bgColor, $borderColor, $size: 10px, $scaleX: false, $scaleY: false) {
 	position: absolute;
 	width: $size * 2;
