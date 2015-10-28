@@ -4,70 +4,95 @@
 //------------------------------------------------------
 
 // basic style
-%k-triangle-basic{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    pointer-events: none;
+%k-triangle-basic {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	pointer-events: none;
 }
 
-@function k-triangle-size($width, $direction, $size){
-    $ret: ();
-    @if($width){
-        @if ($direction == top or $direction == bottom) {
-            $ret: $size;
-        }@else if ($direction == right or $direction == left){
-            $ret: $size / 2;
-        }
-    }@else{
-        @if ($direction == top or $direction == bottom) {
-            $ret: $size / 2;
-        }@else if ($direction == right or $direction == left){
-            $ret: $size;
-        }
-    }
-    @return $ret;
+@function k-triangle-size($width, $direction, $size) {
+	$ret: ();
+	@if ($width) {
+		@if ($direction == top or $direction == bottom) {
+			$ret: $size;
+		} @else if ($direction == right or $direction == left) {
+			$ret: $size / 2;
+		}
+	} @else {
+		@if ($direction == top or $direction == bottom) {
+			$ret: $size / 2;
+		} @else if ($direction == right or $direction == left) {
+			$ret: $size;
+		}
+	}
+	@return $ret;
 }
 
-@mixin k-triangle-border($direction, $size, $bgColor){
-    @if ($direction == top or $direction == bottom) {
-        border-left: $size dashed transparent;
-        border-right: $size dashed transparent;
-    }@else if ($direction == right or $direction == left){
-        border-top: $size dashed transparent;
-        border-bottom: $size dashed transparent;
-    }
-    border-#{$direction}: $size solid $bgColor;
+@function k-triangle-position($top, $direction) {
+	$ret: ();
+	@if ($top) {
+		@if ($direction == top or $direction == bottom) {
+			$ret: 2px;
+		} @else if ($direction == right or $direction == left) {
+			$ret: 1px;
+		}
+	} @else {
+		@if ($direction == top or $direction == bottom) {
+			$ret: 1px;
+		} @else if ($direction == right or $direction == left) {
+			$ret: 2px;
+		}
+	}
+	@return $ret;
+}
+
+@mixin k-triangle-border($direction, $size, $bgColor) {
+	@if ($direction == top or $direction == bottom) {
+		border-left: $size dashed transparent;
+		border-right: $size dashed transparent;
+	} @else if ($direction == right or $direction == left) {
+		border-top: $size dashed transparent;
+		border-bottom: $size dashed transparent;
+	}
+	border-#{$direction}: $size solid $bgColor;
 }
 
 @mixin k-triangle($direction: top, $size:10px, $bgColor: #ccc, $borderColor: false, $scaleX: false, $scaleY: false) {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
 
-    $borderSize: $size / 2;
+	$borderSize: $size / 2;
 
-    @if ($borderColor){
-        width: k-triangle-size(true, $direction, $size) + 2;
-        height: k-triangle-size(false, $direction, $size) + 2;
-        &:before{
-            @extend %k-triangle-basic;
-            @include k-triangle-border($direction, $borderSize + 2, $borderColor);
-        }
-    }@else{
-        width: k-triangle-size(true, $direction, $size);
-        height: k-triangle-size(false, $direction, $size);
-    }
+	width: k-triangle-size(true, $direction, $size);
+	height: k-triangle-size(false, $direction, $size);
 
-    &:after {
-        @extend %k-triangle-basic;
-        @include k-triangle-border($direction, $borderSize, $bgColor);
-    }
+	@if ($borderColor) {
+		&:before {
+			@extend %k-triangle-basic;
+			@include k-triangle-border($direction, $borderSize, $borderColor);
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+		&:after{
+			@extend %k-triangle-basic;
+			@include k-triangle-border($direction, $borderSize - 2, $bgColor);
+			left: k-triangle-position(true, $direction);
+			top: k-triangle-position(false, $direction);
+			z-index: 2;
+		}
+	} @else {
+		&:after {
+			@include k-triangle-basic;
+			@include k-triangle-border($direction, $borderSize, $bgColor);
+		}
+	}
+
 }
 
-@mixin k-triangle-tips($direction: top, $size:10px, $bgColor: #ccc, $borderColor: false, $scaleX: false, $scaleY: false){
+@mixin k-triangle-tips($direction: top, $size:10px, $bgColor: #ccc, $borderColor: false, $scaleX: false, $scaleY: false) {
 
 }

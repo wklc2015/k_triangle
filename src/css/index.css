@@ -229,8 +229,6 @@ th {
 section .demo .dropdown-top:before, section .demo .dropdown-top:after, section .demo .dropdown-right:before, section .demo .dropdown-right:after, section .demo .dropdown-bottom:before, section .demo .dropdown-bottom:after, section .demo .dropdown-left:before, section .demo .dropdown-left:after {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0;
   width: 0;
   height: 0;
   pointer-events: none;
@@ -260,67 +258,91 @@ section .demo .dropdown-top {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 22px;
-  height: 12px;
+  width: 20px;
+  height: 10px;
 }
 section .demo .dropdown-top:before {
-  border-left: 12px dashed transparent;
-  border-right: 12px dashed transparent;
-  border-top: 12px solid #000;
-}
-section .demo .dropdown-top:after {
   border-left: 10px dashed transparent;
   border-right: 10px dashed transparent;
-  border-top: 10px solid #ccc;
+  border-top: 10px solid #000;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+section .demo .dropdown-top:after {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-top: 8px solid #ccc;
+  left: 2px;
+  top: 1px;
+  z-index: 2;
 }
 section .demo .dropdown-right {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 12px;
-  height: 22px;
+  width: 10px;
+  height: 20px;
 }
 section .demo .dropdown-right:before {
-  border-top: 12px dashed transparent;
-  border-bottom: 12px dashed transparent;
-  border-right: 12px solid #000;
-}
-section .demo .dropdown-right:after {
   border-top: 10px dashed transparent;
   border-bottom: 10px dashed transparent;
-  border-right: 10px solid #ccc;
+  border-right: 10px solid #000;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+section .demo .dropdown-right:after {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-right: 8px solid #ccc;
+  left: 1px;
+  top: 2px;
+  z-index: 2;
 }
 section .demo .dropdown-bottom {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 22px;
-  height: 12px;
+  width: 20px;
+  height: 10px;
 }
 section .demo .dropdown-bottom:before {
-  border-left: 12px dashed transparent;
-  border-right: 12px dashed transparent;
-  border-bottom: 12px solid #000;
-}
-section .demo .dropdown-bottom:after {
   border-left: 10px dashed transparent;
   border-right: 10px dashed transparent;
-  border-bottom: 10px solid #ccc;
+  border-bottom: 10px solid #000;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+section .demo .dropdown-bottom:after {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-bottom: 8px solid #ccc;
+  left: 2px;
+  top: 1px;
+  z-index: 2;
 }
 section .demo .dropdown-left {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 12px;
-  height: 22px;
+  width: 10px;
+  height: 20px;
 }
 section .demo .dropdown-left:before {
-  border-top: 12px dashed transparent;
-  border-bottom: 12px dashed transparent;
-  border-left: 12px solid #000;
-}
-section .demo .dropdown-left:after {
   border-top: 10px dashed transparent;
   border-bottom: 10px dashed transparent;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #000;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+section .demo .dropdown-left:after {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-left: 8px solid #ccc;
+  left: 1px;
+  top: 2px;
+  z-index: 2;
 }
