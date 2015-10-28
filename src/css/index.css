@@ -226,7 +226,7 @@ th {
   padding: 0;
 }
 
-section .demo .dropdown-top:before, section .demo .dropdown-top:after, section .demo .dropdown-right:before, section .demo .dropdown-right:after, section .demo .dropdown-bottom:before, section .demo .dropdown-bottom:after, section .demo .dropdown-left:before, section .demo .dropdown-left:after {
+section .demo .triangle-top-bg:after, section .demo .triangle-top-border:before, section .demo .triangle-top-border:after, section .demo .triangle-right-bg:after, section .demo .triangle-right-border:before, section .demo .triangle-right-border:after, section .demo .triangle-bottom-bg:after, section .demo .triangle-bottom-border:before, section .demo .triangle-bottom-border:after, section .demo .triangle-left-bg:after, section .demo .triangle-left-border:before, section .demo .triangle-left-border:after, section .demo.tooltips-top-bg:after, section .demo.tooltips-top-border:before, section .demo.tooltips-top-border:after, section .demo.tooltips-top-scaleX-border:before, section .demo.tooltips-top-scaleX-border:after, section .demo.tooltips-right-bg:after, section .demo.tooltips-right-border:before, section .demo.tooltips-right-border:after, section .demo.tooltips-bottom-bg:after, section .demo.tooltips-bottom-border:before, section .demo.tooltips-bottom-border:after, section .demo.tooltips-left-bg:after, section .demo.tooltips-left-border:before, section .demo.tooltips-left-border:after {
   content: '';
   position: absolute;
   width: 0;
@@ -240,109 +240,350 @@ section {
 section .demo {
   position: relative;
   width: 200px;
-  height: 40px;
-  line-height: 40px;
+  height: 100px;
+  line-height: 100px;
   background-color: #eee;
   background-origin: border-box;
-  border: 1px solid #000;
+  border: 1px solid #00e;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
-section .demo .dropdown-top {
+section .demo .triangle-top-bg {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 10px;
+  width: 16px;
+  height: 8px;
 }
-section .demo .dropdown-top:before {
-  border-left: 10px dashed transparent;
-  border-right: 10px dashed transparent;
-  border-top: 10px solid #000;
+section .demo .triangle-top-bg:after {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-top: 8px solid #333;
+  left: 0;
+  top: 0;
+}
+section .demo .triangle-top-border {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 8px;
+}
+section .demo .triangle-top-border:before {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-top: 8px solid #333;
   left: 0;
   top: 0;
   z-index: 1;
 }
-section .demo .dropdown-top:after {
-  border-left: 8px dashed transparent;
-  border-right: 8px dashed transparent;
-  border-top: 8px solid #ccc;
+section .demo .triangle-top-border:after {
+  border-left: 6px dashed transparent;
+  border-right: 6px dashed transparent;
+  border-top: 6px solid #ddd;
   left: 2px;
   top: 1px;
   z-index: 2;
 }
-section .demo .dropdown-right {
+section .demo .triangle-right-bg {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 10px;
-  height: 20px;
+  width: 8px;
+  height: 16px;
 }
-section .demo .dropdown-right:before {
-  border-top: 10px dashed transparent;
-  border-bottom: 10px dashed transparent;
-  border-right: 10px solid #000;
+section .demo .triangle-right-bg:after {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-right: 8px solid #333;
+  left: 0;
+  top: 0;
+}
+section .demo .triangle-right-border {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 16px;
+}
+section .demo .triangle-right-border:before {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-right: 8px solid #333;
   left: 0;
   top: 0;
   z-index: 1;
 }
-section .demo .dropdown-right:after {
-  border-top: 8px dashed transparent;
-  border-bottom: 8px dashed transparent;
-  border-right: 8px solid #ccc;
+section .demo .triangle-right-border:after {
+  border-top: 6px dashed transparent;
+  border-bottom: 6px dashed transparent;
+  border-right: 6px solid #ddd;
   left: 1px;
   top: 2px;
   z-index: 2;
 }
-section .demo .dropdown-bottom {
+section .demo .triangle-bottom-bg {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 10px;
+  width: 16px;
+  height: 8px;
 }
-section .demo .dropdown-bottom:before {
-  border-left: 10px dashed transparent;
-  border-right: 10px dashed transparent;
-  border-bottom: 10px solid #000;
+section .demo .triangle-bottom-bg:after {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-bottom: 8px solid #333;
+  left: 0;
+  top: 0;
+}
+section .demo .triangle-bottom-border {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 8px;
+}
+section .demo .triangle-bottom-border:before {
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  border-bottom: 8px solid #333;
   left: 0;
   top: 0;
   z-index: 1;
 }
-section .demo .dropdown-bottom:after {
-  border-left: 8px dashed transparent;
-  border-right: 8px dashed transparent;
-  border-bottom: 8px solid #ccc;
+section .demo .triangle-bottom-border:after {
+  border-left: 6px dashed transparent;
+  border-right: 6px dashed transparent;
+  border-bottom: 6px solid #ddd;
   left: 2px;
   top: 1px;
   z-index: 2;
 }
-section .demo .dropdown-left {
+section .demo .triangle-left-bg {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 10px;
-  height: 20px;
+  width: 8px;
+  height: 16px;
 }
-section .demo .dropdown-left:before {
-  border-top: 10px dashed transparent;
-  border-bottom: 10px dashed transparent;
-  border-left: 10px solid #000;
+section .demo .triangle-left-bg:after {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-left: 8px solid #333;
+  left: 0;
+  top: 0;
+}
+section .demo .triangle-left-border {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 16px;
+}
+section .demo .triangle-left-border:before {
+  border-top: 8px dashed transparent;
+  border-bottom: 8px dashed transparent;
+  border-left: 8px solid #333;
   left: 0;
   top: 0;
   z-index: 1;
 }
-section .demo .dropdown-left:after {
-  border-top: 8px dashed transparent;
-  border-bottom: 8px dashed transparent;
-  border-left: 8px solid #ccc;
+section .demo .triangle-left-border:after {
+  border-top: 6px dashed transparent;
+  border-bottom: 6px dashed transparent;
+  border-left: 6px solid #ddd;
   left: 1px;
   top: 2px;
   z-index: 2;
+}
+section .demo.tooltips-top-bg, section .demo.tooltips-right-bg, section .demo.tooltips-bottom-bg, section .demo.tooltips-left-bg {
+  background-color: #00e;
+  color: #fff;
+}
+section .demo.tooltips-top-bg {
+  position: relative;
+}
+section .demo.tooltips-top-bg:after {
+  left: 50%;
+  -moz-transform: translate(-50%, -100%)  rotate(180deg);
+  -ms-transform: translate(-50%, -100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, -100%)  rotate(180deg);
+  transform: translate(-50%, -100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-top: 16px solid #00e;
+  top: 0;
+}
+section .demo.tooltips-top-border {
+  position: relative;
+}
+section .demo.tooltips-top-border:before {
+  left: 50%;
+  -moz-transform: translate(-50%, -100%)  rotate(180deg);
+  -ms-transform: translate(-50%, -100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, -100%)  rotate(180deg);
+  transform: translate(-50%, -100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-top: 16px solid #00e;
+  top: 0;
+}
+section .demo.tooltips-top-border:after {
+  left: 50%;
+  -moz-transform: translate(-50%, -100%)  rotate(180deg);
+  -ms-transform: translate(-50%, -100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, -100%)  rotate(180deg);
+  transform: translate(-50%, -100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-top: 16px solid #eee;
+  top: 1px;
+}
+section .demo.tooltips-top-scaleX-border {
+  position: relative;
+}
+section .demo.tooltips-top-scaleX-border:before {
+  left: 50%;
+  -moz-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  -ms-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  -webkit-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  border-left: 32px dashed transparent;
+  border-right: 32px dashed transparent;
+  border-top: 32px solid #00e;
+  top: 0;
+}
+section .demo.tooltips-top-scaleX-border:after {
+  left: 50%;
+  -moz-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  -ms-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  -webkit-transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  transform: translate(-50%, -100%) scaleX(0.7) rotate(180deg);
+  border-left: 32px dashed transparent;
+  border-right: 32px dashed transparent;
+  border-top: 32px solid #eee;
+  top: 1px;
+}
+section .demo.tooltips-right-bg {
+  position: relative;
+}
+section .demo.tooltips-right-bg:after {
+  top: 50%;
+  -moz-transform: translate(100%, -50%)  rotate(180deg);
+  -ms-transform: translate(100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(100%, -50%)  rotate(180deg);
+  transform: translate(100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-right: 16px solid #00e;
+  right: 0;
+}
+section .demo.tooltips-right-border {
+  position: relative;
+}
+section .demo.tooltips-right-border:before {
+  top: 50%;
+  -moz-transform: translate(100%, -50%)  rotate(180deg);
+  -ms-transform: translate(100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(100%, -50%)  rotate(180deg);
+  transform: translate(100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-right: 16px solid #00e;
+  right: 0;
+}
+section .demo.tooltips-right-border:after {
+  top: 50%;
+  -moz-transform: translate(100%, -50%)  rotate(180deg);
+  -ms-transform: translate(100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(100%, -50%)  rotate(180deg);
+  transform: translate(100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-right: 16px solid #eee;
+  right: 1px;
+}
+section .demo.tooltips-bottom-bg {
+  position: relative;
+}
+section .demo.tooltips-bottom-bg:after {
+  left: 50%;
+  -moz-transform: translate(-50%, 100%)  rotate(180deg);
+  -ms-transform: translate(-50%, 100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, 100%)  rotate(180deg);
+  transform: translate(-50%, 100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-bottom: 16px solid #00e;
+  bottom: 0;
+}
+section .demo.tooltips-bottom-border {
+  position: relative;
+}
+section .demo.tooltips-bottom-border:before {
+  left: 50%;
+  -moz-transform: translate(-50%, 100%)  rotate(180deg);
+  -ms-transform: translate(-50%, 100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, 100%)  rotate(180deg);
+  transform: translate(-50%, 100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-bottom: 16px solid #00e;
+  bottom: 0;
+}
+section .demo.tooltips-bottom-border:after {
+  left: 50%;
+  -moz-transform: translate(-50%, 100%)  rotate(180deg);
+  -ms-transform: translate(-50%, 100%)  rotate(180deg);
+  -webkit-transform: translate(-50%, 100%)  rotate(180deg);
+  transform: translate(-50%, 100%)  rotate(180deg);
+  border-left: 16px dashed transparent;
+  border-right: 16px dashed transparent;
+  border-bottom: 16px solid #eee;
+  bottom: 1px;
+}
+section .demo.tooltips-left-bg {
+  position: relative;
+}
+section .demo.tooltips-left-bg:after {
+  top: 50%;
+  -moz-transform: translate(-100%, -50%)  rotate(180deg);
+  -ms-transform: translate(-100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(-100%, -50%)  rotate(180deg);
+  transform: translate(-100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-left: 16px solid #00e;
+  left: 0;
+}
+section .demo.tooltips-left-border {
+  position: relative;
+}
+section .demo.tooltips-left-border:before {
+  top: 50%;
+  -moz-transform: translate(-100%, -50%)  rotate(180deg);
+  -ms-transform: translate(-100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(-100%, -50%)  rotate(180deg);
+  transform: translate(-100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-left: 16px solid #00e;
+  left: 0;
+}
+section .demo.tooltips-left-border:after {
+  top: 50%;
+  -moz-transform: translate(-100%, -50%)  rotate(180deg);
+  -ms-transform: translate(-100%, -50%)  rotate(180deg);
+  -webkit-transform: translate(-100%, -50%)  rotate(180deg);
+  transform: translate(-100%, -50%)  rotate(180deg);
+  border-top: 16px dashed transparent;
+  border-bottom: 16px dashed transparent;
+  border-left: 16px solid #eee;
+  left: 1px;
 }

@@ -6,48 +6,81 @@
 section {
 	padding: 30px;
 	$bgColor: #eee;
-	$borderColor: #000;
-	$size: 20px;
-	$size2: $size * 1;
-	$bgColor2: #ccc;
-	$borderColor2: #f00;
+	$borderColor: #00e;
+	$size: 16px;
+	$bgColor2: #ddd;
+	$borderColor2: #333;
 	.demo {
 		position: relative;
 		width: 200px;
-		height: 40px;
-		line-height: 40px;
+		height: 100px;
+		line-height: 100px;
 		background-color: $bgColor;
 		background-origin: border-box;
 		border: 1px solid $borderColor;
 		@include border-radius(5px);
-		margin-bottom: 10px;
+		margin-bottom: 50px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		font-size: $size;
-		.dropdown-top {
-			@include k-triangle($direction: top, $borderColor: $borderColor, $size: $size);
+		font-size: 16px;
+		.triangle-top-bg {
+			@include k-triangle($direction: top, $bgColor: $borderColor2, $size: $size, $scaleX: 0.7);
 		}
-		.dropdown-right {
-			@include k-triangle($direction: right, $borderColor: $borderColor, $size: $size);
+		.triangle-top-border {
+			@include k-triangle($direction: top, $bgColor: $bgColor2, $borderColor: $borderColor2, $size: $size, $scaleX: 0.7);
 		}
-		.dropdown-bottom {
-			@include k-triangle($direction: bottom, $borderColor: $borderColor, $size: $size);
+		.triangle-right-bg {
+			@include k-triangle($direction: right, $bgColor: $borderColor2, $size: $size);
 		}
-		.dropdown-left {
-			@include k-triangle($direction: left, $borderColor: $borderColor, $size: $size);
+		.triangle-right-border {
+			@include k-triangle($direction: right, $bgColor: $bgColor2, $borderColor: $borderColor2, $size: $size);
 		}
-		&.tips-top {
-			@include k-triangle-tips(top, $bgColor, $borderColor, $size);
+		.triangle-bottom-bg {
+			@include k-triangle($direction: bottom, $bgColor: $borderColor2, $size: $size);
 		}
-		&.tips-right {
-			@include k-triangle-tips(right, $bgColor, $borderColor, $size);
+		.triangle-bottom-border {
+			@include k-triangle($direction: bottom, $bgColor: $bgColor2, $borderColor: $borderColor2, $size: $size);
 		}
-		&.tips-bottom {
-			@include k-triangle-tips(bottom, $bgColor, $borderColor, $size);
+		.triangle-left-bg {
+			@include k-triangle($direction: left, $bgColor: $borderColor2, $size: $size);
 		}
-		&.tips-left {
-			@include k-triangle-tips(left, $bgColor, $borderColor, $size);
+		.triangle-left-border {
+			@include k-triangle($direction: left, $bgColor: $bgColor2, $borderColor: $borderColor2, $size: $size);
+		}
+		&.tooltips-top-bg,
+		&.tooltips-right-bg,
+		&.tooltips-bottom-bg,
+		&.tooltips-left-bg{
+			background-color:$borderColor;
+			color: #fff;
+		}
+		&.tooltips-top-bg {
+			@include k-triangle-tooltips($direction: top, $bgColor: $borderColor, $size: $size);
+		}
+		&.tooltips-top-border {
+			@include k-triangle-tooltips($direction: top, $bgColor: $bgColor, $borderColor: $borderColor, $size: $size);
+		}
+		&.tooltips-top-scaleX-border {
+			@include k-triangle-tooltips($direction: top, $bgColor: $bgColor, $borderColor: $borderColor, $size: $size * 2, $scaleX:0.7);
+		}
+		&.tooltips-right-bg {
+			@include k-triangle-tooltips($direction: right, $bgColor: $borderColor, $size: $size);
+		}
+		&.tooltips-right-border {
+			@include k-triangle-tooltips($direction: right, $bgColor: $bgColor, $borderColor: $borderColor, $size: $size);
+		}
+		&.tooltips-bottom-bg {
+			@include k-triangle-tooltips($direction: bottom, $bgColor: $borderColor, $size: $size);
+		}
+		&.tooltips-bottom-border {
+			@include k-triangle-tooltips($direction: bottom, $bgColor: $bgColor, $borderColor: $borderColor, $size: $size);
+		}
+		&.tooltips-left-bg {
+			@include k-triangle-tooltips($direction: left, $bgColor: $borderColor, $size: $size);
+		}
+		&.tooltips-left-border {
+			@include k-triangle-tooltips($direction: left, $bgColor: $bgColor, $borderColor: $borderColor, $size: $size);
 		}
 	}
 }
