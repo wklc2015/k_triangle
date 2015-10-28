@@ -1,6 +1,5 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
 details,
@@ -16,7 +15,6 @@ summary {
   display: block;
 }
 
-/* line 29, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 audio,
 canvas,
 progress,
@@ -25,78 +23,65 @@ video {
   vertical-align: baseline;
 }
 
-/* line 40, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 47, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 [hidden],
 template {
   display: none;
 }
 
 /*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
-/* line 11, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 19, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 body {
   margin: 0;
 }
 
 /*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
 }
 
-/* line 15, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
 /*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 15, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 22, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 29, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 36, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 43, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 small {
   font-size: 80%;
 }
 
-/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -105,46 +90,38 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 57, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 61, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 sub {
   bottom: -0.25em;
 }
 
 /*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
 }
 
-/* line 15, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 15, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 23, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 pre {
   overflow: auto;
 }
 
-/* line 29, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 code,
 kbd,
 pre,
@@ -154,7 +131,6 @@ samp {
 }
 
 /*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
-/* line 15, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
 optgroup,
@@ -165,18 +141,15 @@ textarea {
   margin: 0;
 }
 
-/* line 27, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button {
   overflow: visible;
 }
 
-/* line 36, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 47, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -185,38 +158,32 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 57, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 64, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 73, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input {
   line-height: normal;
 }
 
-/* line 83, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 93, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 102, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -224,414 +191,136 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 113, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 120, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 129, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 136, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 143, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 optgroup {
   font-weight: bold;
 }
 
 /*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
-/* line 9, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 14, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 td,
 th {
   padding: 0;
 }
 
-/* line 6, ../sass/_demo.scss */
+section .demo .dropdown-top:before, section .demo .dropdown-top:after, section .demo .dropdown-right:before, section .demo .dropdown-right:after, section .demo .dropdown-bottom:before, section .demo .dropdown-bottom:after, section .demo .dropdown-left:before, section .demo .dropdown-left:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
 section {
   padding: 30px;
 }
-/* line 14, ../sass/_demo.scss */
 section .demo {
   position: relative;
   width: 200px;
-  height: 100px;
+  height: 40px;
+  line-height: 40px;
   background-color: #eee;
   background-origin: border-box;
   border: 1px solid #000;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  line-height: 100px;
+  font-size: 20px;
 }
-/* line 27, ../sass/_demo.scss */
-section .demo.tips-top {
+section .demo .dropdown-top {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 12px;
 }
-/* line 88, ../sass/_triangle.scss */
-section .demo.tips-top:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-top-color: #000;
-  left: 50%;
-  -moz-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  -ms-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  -webkit-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  top: 0;
+section .demo .dropdown-top:before {
+  border-left: 12px dashed transparent;
+  border-right: 12px dashed transparent;
+  border-top: 12px solid #000;
 }
-/* line 94, ../sass/_triangle.scss */
-section .demo.tips-top:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-top-color: #eee;
-  left: 50%;
-  -moz-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  -ms-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  -webkit-transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  transform: translate(-50%, -100%) scaleX(0.6) rotate(180deg);
-  top: 1px;
+section .demo .dropdown-top:after {
+  border-left: 10px dashed transparent;
+  border-right: 10px dashed transparent;
+  border-top: 10px solid #ccc;
 }
-/* line 30, ../sass/_demo.scss */
-section .demo.tips-right {
+section .demo .dropdown-right {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 22px;
 }
-/* line 88, ../sass/_triangle.scss */
-section .demo.tips-right:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-right-color: #000;
-  top: 50%;
-  -moz-transform: translate(100%, -50%)  rotate(180deg);
-  -ms-transform: translate(100%, -50%)  rotate(180deg);
-  -webkit-transform: translate(100%, -50%)  rotate(180deg);
-  transform: translate(100%, -50%)  rotate(180deg);
-  right: 0;
+section .demo .dropdown-right:before {
+  border-top: 12px dashed transparent;
+  border-bottom: 12px dashed transparent;
+  border-right: 12px solid #000;
 }
-/* line 94, ../sass/_triangle.scss */
-section .demo.tips-right:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-right-color: #eee;
-  top: 50%;
-  -moz-transform: translate(100%, -50%)  rotate(180deg);
-  -ms-transform: translate(100%, -50%)  rotate(180deg);
-  -webkit-transform: translate(100%, -50%)  rotate(180deg);
-  transform: translate(100%, -50%)  rotate(180deg);
-  right: 1px;
+section .demo .dropdown-right:after {
+  border-top: 10px dashed transparent;
+  border-bottom: 10px dashed transparent;
+  border-right: 10px solid #ccc;
 }
-/* line 33, ../sass/_demo.scss */
-section .demo.tips-bottom {
+section .demo .dropdown-bottom {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 12px;
 }
-/* line 88, ../sass/_triangle.scss */
-section .demo.tips-bottom:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-bottom-color: #000;
-  left: 50%;
-  -moz-transform: translate(-50%, 100%)  rotate(180deg);
-  -ms-transform: translate(-50%, 100%)  rotate(180deg);
-  -webkit-transform: translate(-50%, 100%)  rotate(180deg);
-  transform: translate(-50%, 100%)  rotate(180deg);
-  bottom: 0;
+section .demo .dropdown-bottom:before {
+  border-left: 12px dashed transparent;
+  border-right: 12px dashed transparent;
+  border-bottom: 12px solid #000;
 }
-/* line 94, ../sass/_triangle.scss */
-section .demo.tips-bottom:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-bottom-color: #eee;
-  left: 50%;
-  -moz-transform: translate(-50%, 100%)  rotate(180deg);
-  -ms-transform: translate(-50%, 100%)  rotate(180deg);
-  -webkit-transform: translate(-50%, 100%)  rotate(180deg);
-  transform: translate(-50%, 100%)  rotate(180deg);
-  bottom: 1px;
+section .demo .dropdown-bottom:after {
+  border-left: 10px dashed transparent;
+  border-right: 10px dashed transparent;
+  border-bottom: 10px solid #ccc;
 }
-/* line 36, ../sass/_demo.scss */
-section .demo.tips-left {
+section .demo .dropdown-left {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 22px;
 }
-/* line 88, ../sass/_triangle.scss */
-section .demo.tips-left:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-left-color: #000;
-  top: 50%;
-  -moz-transform: translate(-100%, -50%)  rotate(180deg);
-  -ms-transform: translate(-100%, -50%)  rotate(180deg);
-  -webkit-transform: translate(-100%, -50%)  rotate(180deg);
-  transform: translate(-100%, -50%)  rotate(180deg);
-  left: 0;
+section .demo .dropdown-left:before {
+  border-top: 12px dashed transparent;
+  border-bottom: 12px dashed transparent;
+  border-left: 12px solid #000;
 }
-/* line 94, ../sass/_triangle.scss */
-section .demo.tips-left:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-left-color: #eee;
-  top: 50%;
-  -moz-transform: translate(-100%, -50%)  rotate(180deg);
-  -ms-transform: translate(-100%, -50%)  rotate(180deg);
-  -webkit-transform: translate(-100%, -50%)  rotate(180deg);
-  transform: translate(-100%, -50%)  rotate(180deg);
-  left: 1px;
-}
-/* line 40, ../sass/_demo.scss */
-section .demo.dropdown-top div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 20%;
-  top: 50%;
-  margin-top: -20px;
-}
-/* line 110, ../sass/_triangle.scss */
-section .demo.dropdown-top div:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-top-color: #f00;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* line 115, ../sass/_triangle.scss */
-section .demo.dropdown-top div:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 18px;
-  border-top-color: #ccc;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  margin-top: 1px;
-  margin-left: 2px;
-}
-/* line 45, ../sass/_demo.scss */
-section .demo.dropdown-right div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 20%;
-  top: 50%;
-  margin-top: -20px;
-}
-/* line 110, ../sass/_triangle.scss */
-section .demo.dropdown-right div:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-right-color: #f00;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* line 115, ../sass/_triangle.scss */
-section .demo.dropdown-right div:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 18px;
-  border-right-color: #ccc;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  margin-top: 2px;
-  margin-left: 3px;
-}
-/* line 50, ../sass/_demo.scss */
-section .demo.dropdown-bottom div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 20%;
-  top: 50%;
-  margin-top: -20px;
-}
-/* line 110, ../sass/_triangle.scss */
-section .demo.dropdown-bottom div:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-bottom-color: #f00;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* line 115, ../sass/_triangle.scss */
-section .demo.dropdown-bottom div:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 18px;
-  border-bottom-color: #ccc;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  margin-top: 3px;
-  margin-left: 2px;
-}
-/* line 55, ../sass/_demo.scss */
-section .demo.dropdown-left div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 20%;
-  top: 50%;
-  margin-top: -20px;
-}
-/* line 110, ../sass/_triangle.scss */
-section .demo.dropdown-left div:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 20px;
-  border-left-color: #f00;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* line 115, ../sass/_triangle.scss */
-section .demo.dropdown-left div:after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  pointer-events: none;
-  border-color: transparent;
-  border-width: 18px;
-  border-left-color: #ccc;
-  top: 0;
-  left: 0;
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  margin-top: 2px;
-  margin-left: 1px;
+section .demo .dropdown-left:after {
+  border-top: 10px dashed transparent;
+  border-bottom: 10px dashed transparent;
+  border-left: 10px solid #ccc;
 }

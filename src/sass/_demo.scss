@@ -14,47 +14,40 @@ section {
 	.demo {
 		position: relative;
 		width: 200px;
-		height: 100px;
+		height: 40px;
+		line-height: 40px;
 		background-color: $bgColor;
 		background-origin: border-box;
 		border: 1px solid $borderColor;
 		@include border-radius(5px);
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		line-height: 100px;
+		font-size: $size;
+		.dropdown-top {
+			@include k-triangle($direction: top, $borderColor: $borderColor, $size: $size);
+		}
+		.dropdown-right {
+			@include k-triangle($direction: right, $borderColor: $borderColor, $size: $size);
+		}
+		.dropdown-bottom {
+			@include k-triangle($direction: bottom, $borderColor: $borderColor, $size: $size);
+		}
+		.dropdown-left {
+			@include k-triangle($direction: left, $borderColor: $borderColor, $size: $size);
+		}
 		&.tips-top {
-			@include k_triangle_tips(top, $bgColor, $borderColor, $size, 0.6);
+			@include k-triangle-tips(top, $bgColor, $borderColor, $size);
 		}
 		&.tips-right {
-			@include k_triangle_tips(right, $bgColor, $borderColor, $size);
+			@include k-triangle-tips(right, $bgColor, $borderColor, $size);
 		}
 		&.tips-bottom {
-			@include k_triangle_tips(bottom, $bgColor, $borderColor, $size);
+			@include k-triangle-tips(bottom, $bgColor, $borderColor, $size);
 		}
 		&.tips-left {
-			@include k_triangle_tips(left, $bgColor, $borderColor, $size);
-		}
-		&.dropdown-top {
-			div {
-				@include k_triangle_dropdown(top, $bgColor2, $borderColor2, $size2, $scaleY: 1);
-			}
-		}
-		&.dropdown-right {
-			div {
-				@include k_triangle_dropdown(right, $bgColor2, $borderColor2, $size2, $scaleY: 1);
-			}
-		}
-		&.dropdown-bottom {
-			div {
-				@include k_triangle_dropdown(bottom, $bgColor2, $borderColor2, $size2, $scaleY: 1);
-			}
-		}
-		&.dropdown-left {
-			div {
-				@include k_triangle_dropdown(left, $bgColor2, $borderColor2, $size2, $scaleY: 1);
-			}
+			@include k-triangle-tips(left, $bgColor, $borderColor, $size);
 		}
 	}
 }
